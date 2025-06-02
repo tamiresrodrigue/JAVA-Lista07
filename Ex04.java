@@ -5,7 +5,7 @@ public class Ex04 {
         System.out.println("Números ímpares entre 0 e 20:");
 
         for (int i = 0; i <= 20; i++) {
-            if (i % 2 != 0) { // verifica se é ímpar
+            if (i % 2 != 0) { 
                 System.out.println(i);
             }
         }

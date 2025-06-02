@@ -19,7 +19,7 @@ public class Ex07 {
             }
 
             if (i == 1) {
-                System.out.print(""); // já printou 1 sem vírgula antes
+                System.out.print(""); 
             }
         }
         System.out.println();

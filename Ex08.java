@@ -5,8 +5,7 @@ public class Ex08 {
         System.out.println("Celsius\tFahrenheit");
 
         for (int celsius = 10; celsius <= 100; celsius += 10) {
-            // Fórmula: F = (9 * C) / 5 + 32
-            double fahrenheit = (9.0 * celsius) / 5.0 + 32;
+                    double fahrenheit = (9.0 * celsius) / 5.0 + 32;
             System.out.printf("%d\t%.1f\n", celsius, fahrenheit);
         }
     }
