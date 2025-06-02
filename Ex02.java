@@ -1,12 +1,20 @@
-package lista07;
+package lista03;
+
+import java.util.Scanner;
+
 public class Ex02 {
-	 public static void main(String[] args) {
-	        int soma = 0;
 
-	        for (int i = 1; i <= 100; i++) {
-	            soma += i;
-	        }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-	        System.out.println("A soma dos 100 primeiros números inteiros é: " + soma);
-	    }
+		System.out.println("Programa Sucessor");
+		System.out.println("Digite um valor :");
+		int valor = sc.nextInt();
+		valor++;
+		int sucessor = valor;
+		System.out.println(" O valor sucessor do número digitado é :  " + sucessor);
+		sc.close();
+
+	}
+
 }

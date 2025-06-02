@@ -1,13 +1,21 @@
-package lista07;
+package lista03;
+ 
+ import java.util.Scanner;
 
 public class Ex04 {
-	public static void main(String[] args) {
-        System.out.println("Números ímpares entre 0 e 20:");
 
-        for (int i = 0; i <= 20; i++) {
-            if (i % 2 != 0) { 
-                System.out.println(i);
-            }
-        }
-    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Calculo da Area do Triângulo");
+		System.out.println("Digite o valor da base do triângulo :");
+		float base = sc.nextFloat();
+		System.out.println("Digite o valor da altura do triângulo :");
+		float altura = sc.nextFloat();
+		float area = base*altura/2;
+		System.out.println(" O valor da área do triângulo é :  " + area + " cm²");
+		sc.close();
+
+	}
+
 }

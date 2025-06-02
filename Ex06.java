@@ -1,28 +1,23 @@
-package lista07;
+package lista03;
+
 import java.util.Scanner;
+
 public class Ex06 {
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite o valor da base: ");
-        int base = scanner.nextInt();
-
-        System.out.print("Digite o valor do expoente (inteiro não negativo): ");
-        int expoente = scanner.nextInt();
-
-        if (expoente < 0) {
-            System.out.println("Expoente negativo não é suportado neste programa.");
-        } else {
-            long resultado = 1;
-
-            for (int i = 1; i <= expoente; i++) {
-                resultado *= base;
-            }
-
-            System.out.println(base + "^" + expoente + " = " + resultado);
-        }
-
+        
+        // Entrada
+        System.out.print("Digite o raio do círculo: ");
+        double raio = scanner.nextDouble();
+        
+        // Processamento
+        double area = Math.PI * Math.pow(raio, 2);
+        
+        // Saída
+        System.out.printf("A área do círculo é: %.2f\n", area);
+        
         scanner.close();
     }
 }
+
+

@@ -1,17 +1,19 @@
-package lista07;
+package lista03;
+
+import java.util.Scanner;
 
 public class Ex05 {
+
 	public static void main(String[] args) {
-        int base = 3;
+		 Scanner scanner = new Scanner(System.in);
 
-        for (int expoente = 0; expoente <= 15; expoente++) {
-            long resultado = 1; // qualquer número elevado a 0 é 1
+	        System.out.println("Digite o lado do quadrado: ");
+	        float lado = scanner.nextFloat();
 
-            for (int i = 1; i <= expoente; i++) {
-                resultado *= base;
-            }
+	        float area = (float) Math.pow(lado,2);
 
-            System.out.println("3^" + expoente + " = " + resultado);
-        }
-    }
+	        System.out.println("A área do quadrado é: "+ area);
+
+	}
+
 }
